@@ -68,3 +68,67 @@ ggmyfunction(liv,x=liv$drinks,y=liv$alkphos)
 
 By using countchart we can overcome the problem associates with scatter plot.
 
+
+
+
+---
+title: "gglollipop_5",
+author: "shanzida Jahan Siddique",
+date: "October 22, 2018",
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## why lollipopchart
+The lollipop chart is often claimed to be useful compared to a normal bar chart, if you are dealing with a large number of values and when the values are all high, such as in the 80-90% range (out of 100%). Then a large set of tall columns can be visually aggressive.
+
+## The code:
+```
+#' customized lollipopchart function
+#'
+#' function takes a few argument and return a lollipopchart
+#'
+#' @name ggmyfunction_4
+#' @param x a vector of data
+#' @param y another vector of data
+#' @param size indicate size
+#' @param xend another vector of data
+#' @param yend another vector of data
+#' @example
+#' ggmyfunction_4(iris,iris[,1],iris[,2])
+#' @export
+#'
+ggmyfunction_4<-function(dat=data,x,y,size=size,xend,yend){theme_set(theme_bw())
+ggplot(dat, aes(x=dat[[x]], y=dat[[y]])) +geom_point(size=3) +geom_segment(aes(x=x,xend=x,y=y,yend=y))
+  #return(ggmyfunction_4)
+}
+
+```
+##Load library
+```{r message=FALSE,Warning=FALSE}
+library(gglollipop)
+```
+
+## Actual Data
+```{r}
+data("bupa_liverdisorder")
+knitr::kable(bupa_liverdisorder)
+```
+
+
+## Plot with Actual Data
+
+```{r}
+liv3=bupa_liverdisorder
+ggmyfunction_4(liv3,x=liv3$drinks,y=liv3$alkphos,size =3,x=drinks,xend=drinks,y=alkphos,y=alkphos)
+```
+
+## Summary
+we can use lollipop chart when we have large data.
+
+
