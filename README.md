@@ -1,8 +1,8 @@
 # R-packages-gglollipop-chart-and-count-chart
 
-title: "ggcountplot"
-author: "shanzida Jahan Siddique"
-date: "October 22, 2018"
+title: ggcountplot
+author: shanzida Jahan Siddique
+date: October 22, 2018
 output: html_document
 
 ```{r setup, include=FALSE}
