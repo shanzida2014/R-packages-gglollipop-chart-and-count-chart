@@ -67,10 +67,9 @@ By using countchart we can overcome the problem associates with scatter plot.
 
 
 
-R-packages-gglollipop
----
-Author;Shanzida Jahan Siddique
-date: "October 22, 2018",
+# R-packages-gglollipop
+## Author:Shanzida Jahan Siddique 
+## Date:October 22,2018
 
 
 ## why lollipopchart
