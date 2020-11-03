@@ -5,7 +5,9 @@
 -- The Bupa Liver Disorder data sets were taken from UCI Machine Learning repository (https://archive.ics.uci.edu/ml/datasets/liver+disorders)
 
 # R-packages-ggcount-chart
-## AUTHOR:Shanzida Jahan Siddique 
+###### Author:Shanzida Jahan Siddique 
+###### Date :October 22,2018
+
 
 
 ## Correlation
