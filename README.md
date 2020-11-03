@@ -1,18 +1,16 @@
-# R-packages-gglollipop-chart-and-count-chart
+-- This file includes two new R packages which were created with R studio.
+-- One is gglollipop chart and another is ggcountplot. 
+-- The packages were created to give two functions to users. 
+-- Two functions were taken from The R Graph Gallery (https://www.r-graph-gallery.com/)
+-- The Bupa Liver Disorder data sets were taken from UCI Machine Learning repository (https://archive.ics.uci.edu/ml/datasets/liver+disorders)
 
-title: "ggcountplot",
-author: "shanzida Jahan Siddique",
-date: "October 22, 2018",
-output: html_document
+# R-packages-ggcount-chart
+## AUTHOR:Shanzida Jahan Siddique 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Correlation
 
 ggcountplot plots help to examine how well correlated two variables are.
-
 
 ## Scatterplot
 
@@ -21,8 +19,7 @@ It can be drawn using geom_point(). Additionally, geom_smooth which draws a smoo
 
 JItter plot is another form ofscatter plot.But the problem with this plot is sometimes there are many overlapping points appearing as a single dot.
 
-So 
-how to handle this? There are few options. We can make a jitter plot with jitter_geom(). As the name suggests, the overlapping points are randomly jittered around its original position based on a threshold controlled by the width argument.
+So how to handle this? There are few options. We can make a jitter plot with jitter_geom(). As the name suggests, the overlapping points are randomly jittered around its original position based on a threshold controlled by the width argument.
 
 ## Counts Chart
 
@@ -70,18 +67,10 @@ By using countchart we can overcome the problem associates with scatter plot.
 
 
 
-
+R-packages-gglollipop
 ---
-title: "gglollipop_5",
-author: "shanzida Jahan Siddique",
+Author;Shanzida Jahan Siddique
 date: "October 22, 2018",
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 
 
 ## why lollipopchart
