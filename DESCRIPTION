@@ -1,0 +1,13 @@
+Package: ggcountplot
+Type: Package
+Title: Data Visualization In Bioinformatics at Hood College
+Version: 3.4.4
+Author: Shanzida Jahan Siddique
+Maintainer: Shanzida Jahan Siddique <jahanshanzida@gmail.com>
+Description: This R package demonstrates a R function which represents a count plot.
+License: AGPL
+Encoding: UTF-8
+LazyData: true
+Depends: ggplot2
+RoxygenNote:6.1.0
+

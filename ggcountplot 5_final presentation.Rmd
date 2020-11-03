@@ -1,0 +1,73 @@
+---
+title: "Count_chart"
+Name: Shanzida Jahan Siddique
+output:
+  slidy_presentation: default
+  ioslides_presentation:
+    smaller: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Why Count-Charts
+
+* Problems with scatter plots:
+
+The most frequently used plot for data analysis is undoubtedly the scatterplot. Whenever you want to understand the nature of relationship between two variables, invariably the first choice is the scatterplot,but the problem with this plot is sometimes there are many overlapping points appearing as a single dot.
+
+* Possible solutions:
+
+The second option to overcome the problem of data points overlap is to use what is called a counts chart. Whereever there is more points overlap, the size of the circle gets bigger.
+
+## The Code
+
+```
+#' customized countplot function
+#'
+#' function takes a few arguments and return a countplot
+#'
+#' @name ggmygunction
+#' @param x a vector of data
+#' @param y another vector of data
+#' @param countalpha modify colour transparency
+#' @example
+#' ggmyfunction(iris,iris[,1],iris[,2])
+#' @export
+#'
+ggmyfunction<-function(data,x,y, countalpha=0.5) {
+ggplot(data, aes(x,y)) + geom_count(alpha=countalpha)
+# return(ggmyfunction)
+}
+
+```
+## ggmyfunction  with example dataset iris
+
+```{r message=FALSE,warning=FALSE}
+library(ggcountplot)
+ggmyfunction(iris,iris[,1],iris[,2])
+```
+
+## Actual Dataset (Bupa liver disorder)
+
+```{r}
+data("liver_disorder")
+knitr::kable(liver_disorder)
+```
+
+## Graph on Liver Disorder dataset
+
+```{r}
+liv = liver_disorder
+ggmyfunction(liv,x=liv$drinks,y=liv$alkphos)
+```
+
+## Summary
+
+So we can use count chart to resolve the problem with scatter plot.
+
+
+
+
+
